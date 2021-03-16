@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
@@ -13,13 +14,12 @@ export default function Home() {
       </video>
       <main id="main">
         <div id="left">
-          <h1>Constance Ingram</h1>
+          <h1>Constance Ingram</h1><hr></hr>
           <h2>Austin, Texas 🤘</h2>
           <button>
             OK!
           </button>
         </div>
-        <div></div>
       </main>
     </div>
   )
