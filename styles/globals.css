@@ -9,6 +9,10 @@ body {
   font-size: 20px;
 }
 
+ul {
+  font-size: .2rem;
+}
+
 #bgvid {
   position: fixed;
   right: 0;

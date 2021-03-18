@@ -22,9 +22,11 @@ export default function Resume() {
                 <i class="fas fa-backward"></i>
             </Link>
             <h1>Resume</h1>
-            <p>Constance Ingram is a web developer from Austin, Texas.</p>
-            <p>She holds a B.A. in History from the University of Texas at Austin (2015).</p>
-            <p>She currently works an intellectual property analyst (Accenture @ Facebook).</p>
+            <h2>🤘 Experience: </h2>
+                <ul><p><u>Intellectual Property Analyst</u>, Accenture @ Facebook (2019 - current)</p></ul>
+                
+            <h2>🤘 Education: </h2>
+                <ul><p><u>Bachelor of Arts in History</u>, The University of Texas at Austin (2012 - 2015)</p></ul>
         </div>
         </motion.main>
     </div>
