@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
 
@@ -17,18 +18,26 @@ export default function Home() {
           <h1>Constance Ingram</h1><hr></hr>
           <h2>Austin, Texas 🤘</h2>
           <div id="buttons">
-          <button>
-            About
-          </button>
-          <button>
-            Resume
-          </button>
-          <button>
-            Projects
-          </button>
-          <button>
-            Contact
-          </button>
+            <Link href="/about">
+              <button>
+                About
+              </button>
+            </Link>
+            <Link href="/resume">
+              <button>
+                Resume
+              </button>
+            </Link>
+            <Link href="/projects">
+              <button>
+                Projects
+              </button>
+            </Link>
+            <Link href="/contact">
+              <button>
+                Contact
+              </button>
+            </Link>
           </div>
         </div>
       </main>
