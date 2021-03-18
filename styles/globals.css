@@ -18,6 +18,31 @@ body {
   z-index: -1;
 }
 
+#buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1500px) {
+  #buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #left {
+    max-width: 100%;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 20vw;
+  }
+}
+
 #main {
   display: flex;
   flex-direction: row;

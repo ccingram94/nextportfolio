@@ -16,9 +16,20 @@ export default function Home() {
         <div id="left">
           <h1>Constance Ingram</h1><hr></hr>
           <h2>Austin, Texas 🤘</h2>
+          <div id="buttons">
           <button>
-            OK!
+            About
           </button>
+          <button>
+            Resume
+          </button>
+          <button>
+            Projects
+          </button>
+          <button>
+            Contact
+          </button>
+          </div>
         </div>
       </main>
     </div>
