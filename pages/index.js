@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Home() {
   return (
@@ -9,11 +9,15 @@ export default function Home() {
       <Head>
         <title>Constance.io</title>
         <link rel="icon" href="/favicon.png" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"></link>
+
       </Head>
-      <video autoPlay muted loop id="bgvid">
-        <source src="record.mp4" type="video/mp4"></source>
-      </video>
-      <main id="main">
+      <div id="overlay"></div>
+      <motion.main 
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        transition={{ duration: 1 }}
+      id="main">
         <div id="left">
           <h1>Constance Ingram</h1><hr></hr>
           <h2>Austin, Texas 🤘</h2>
@@ -40,7 +44,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </main>
+ 
+        </motion.main>
     </div>
   )
 }

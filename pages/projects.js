@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
 
@@ -8,12 +9,21 @@ export default function Projects() {
       <Head>
         <title>Constance.io</title>
         <link rel="icon" href="/favicon.png" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"></link>
       </Head>
-      <video autoPlay muted loop id="bgvid">
-        <source src="record.mp4" type="video/mp4"></source>
-      </video>
-      <main id="main">
-      </main>
+      <motion.main id="main"
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        transition={{ duration: 1 }}
+        >
+        <div id="left">
+            <Link href="/">
+            <i class="fas fa-backward"></i>
+            </Link>
+            <h1>Projects</h1>
+            <p>oh no, this page is blank</p>
+        </div>
+        </motion.main>
     </div>
   )
 }
