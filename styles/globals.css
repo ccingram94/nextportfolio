@@ -6,12 +6,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-ul {
-  font-size: .2rem;
-}
 
 #bgvid {
   position: fixed;
@@ -38,45 +35,6 @@ ul {
   transition-duration: 0.5s;
 }
 
-
-@media only screen and (max-width: 1500px) {
-
-  #overlay {
-    z-index: -2;
-    background-color: blue;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0.2;
-    transition: 0.5s;
-  }
-  
-  #buttons {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #left {
-    max-width: 100%;
-    text-align: left;
-  }
-
-  #back {
-    width: 10em;
-    height: 10em;
-  }
-
-  body {
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 20vw;
-  }
-}
-
 #main {
   display: flex;
   flex-direction: row;
@@ -95,7 +53,7 @@ h1 {
 
 h2, p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2vw;
+  font-size: 2rem;
   color: white;
 }
 
@@ -128,3 +86,51 @@ hr {
 * {
   box-sizing: border-box;
 }
+
+
+
+/* @media rules below */
+
+@media only screen and (max-width: 1500px) {
+
+  #overlay {
+    z-index: -2;
+    background-color: blue;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.2;
+    transition: 0.5s;
+  }
+  
+  #buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #left {
+    max-width: 80%;
+    padding-left: 30px;
+    text-align: left;
+  }
+
+  #back {
+    width: 10em;
+    height: 10em;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2, p {
+    font-size: 1.5rem;
+  }
+}
+
